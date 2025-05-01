@@ -1,0 +1,106 @@
+header#cabecalho {
+    background-color: #cccccc;
+    background-image: url('../../assets/_imagens/logo-header-luaFloral.jpg');
+    background-color: #cccccc;
+    background-image: url('../../assets/_imagens/logo-header-luaFloral.jpg');
+    background-size: cover;         // cobre toda a área do elemento
+    background-position: center;    // centraliza a imagem
+    background-repeat: no-repeat;    // evita repetição
+    border-bottom: 2px pink solid;
+    height: 300px;
+    text-align: center;
+    width: 900px;
+    margin: 30px auto 30px auto;
+    box-shadow: 15px 5px 10px rgba(226, 168, 132, 0.541);
+
+   
+   .logo-principal {
+    padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-weight: 600px;
+    margin-bottom: 40px;
+    color: #000010;
+    font-size: 30pt;
+    text-shadow: 
+      0 0 5px white,
+      0 0 10px white,
+      0 0 20px white,
+      0 0 30px #f0f,
+      0 0 40px white,
+      0 0 50px #f0f,
+      0 0 60px #f0f;
+    animation: brilhoAnimado 2s ease-in-out infinite alternate;
+  }
+
+  img#flutuante {
+    position: absolute;
+    // left: 950px;
+    // top: 150px;
+  }
+  
+  @keyframes brilhoAnimado {
+    from {
+      text-shadow: 
+        0 0 5px #f0f,
+        0 0 10px white,
+        0 0 15px #f0f,
+        0 0 20px white;
+    }
+    to {
+      text-shadow: 
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px #f0f,
+        0 0 40px #f0f;
+    }
+  }
+
+   h2 {
+    color: black;
+    text-shadow: 2px 0px 10px white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+
+   #flutuante {
+    position: absolute;
+    right: 300px;
+    top: 200px;
+   }
+
+// ***** CONFIGURAÇÃO RESPONSIVA ******
+      // 📱 Celulares
+  @media (max-width: 768px) {
+    h1.logo-principal {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    #flutuante {
+      width: 200px;
+    }
+  }
+
+  // 💻 Tablets
+  @media (max-width: 1024px) {
+    h1.logo-principal {
+      font-size: 2.2rem;
+    }
+    #flutuante {
+      width: 250px;
+    }
+  }
+
+  // 🖥️ Telas grandes (TVs, desktops)
+  @media (min-width: 1920px) {
+    h1.logo-principal {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    #flutuante {
+      width: 350px;
+    }
+}
+}
