@@ -51,7 +51,7 @@ export const MainContent: React.FC = () => {
                 </figure>
 
                 <table className="tabelaFamiliar">
-                    <caption>Tabela Familiar<span>Maio/2025</span></caption>
+                    <caption>Tabela Familiar<span> Maio/2025</span></caption>
                     <tr><td className="ce">Familia Santos</td><td className="cd">Legado de Maria Belmira</td></tr>
                     <tr><td className="ce">Familia Amaro</td><td className="cd">Legado de Maria Amaro</td></tr>
                     <tr><td className="ce">Familia do Coração</td><td className="cd">Legado que Escolhemos</td></tr>

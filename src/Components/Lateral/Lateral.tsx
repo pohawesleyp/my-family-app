@@ -17,6 +17,8 @@ export const Lateral: React.FC = () => {
         </iframe>
         </div>
 
+        <p>E em seus olhos eram tanto brilho, que mais que seu filho, eu fiquei seu fã</p>
+
         <div id="lateral-alem-vida">
         <h1 className="além-da-vida">Além da Vida</h1>
         <p>12 anos e 9 meses sem você: <span className="luto">Maria Belmira (bisavó/mãe)</span></p>

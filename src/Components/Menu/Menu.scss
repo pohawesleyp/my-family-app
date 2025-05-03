@@ -33,12 +33,13 @@ nav {
         text-align: auto;      // alinha à esquerda / -m mudei pra auto
         margin-left: auto;    // espaçamento da borda esquerda (ajuste conforme o layout) / -m mudei pra auto
         font-size: 28pt;     // opcional: tamanho da fonte
-        color: rgb(12, 12, 12);      // opcional: cor do texto
-        // text-shadow: 
-        // 0 0 5px #cccccc,
-        // 0 0 10px rgb(231, 231, 231),
-        // 0 0 15px #8680d8,
-        // 0 0 20px #8799e9;
+        color: rgb(45, 41, 255);      // opcional: cor do texto
+        animation: brilhoAnimado 3s ease-in-out infinite alternate;
+        text-shadow: 
+        0 0 5px #cccccc,
+        0 0 10px rgb(154, 158, 224),
+        0 0 15px #19191a,
+        0 0 20px #152153;
         
     }
     li:hover {
