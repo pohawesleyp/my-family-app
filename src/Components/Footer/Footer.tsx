@@ -3,9 +3,9 @@ import '../Footer/Footer.scss';
 
 export const Footer: React.FC = () => {
     return (
-        <footer className="rodape">
+        <footer className="rodape"> 
           <p>
-           Copyright 2024 - by Wesley Amaro <br />
+           Copyright 2025 - by Wesley Amaro <br />
             <a href="http://linkedin.com/in/wesley-amaro" target="_blank" rel="noopener noreferrer">Linkedin</a> |{' '}
             <a href="http://https://github.com/pohawesleyp" target="_blank" rel="noopener noreferrer">GitHub</a> |{' '}
             <a href="http://instagram.com/pohawesleyp" target="_blank" rel="noopener noreferrer">Instagram</a> |{' '}

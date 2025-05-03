@@ -30,16 +30,17 @@
 
 #cabecalho-artigo {
     h1 {
-        color: black;
-        text-shadow: 
-        0 0 5px rgb(241, 139, 139),
-        0 0 10px brown,
-        0 0 15px #ff69b4,
-        0 0 20px brown;
+        color: rgb(106, 5, 126);
+        // text-shadow: 
+        // 0 0 5px rgb(201, 205, 207),
+        // 0 0 10px rgb(42, 95, 165),
+        // 0 0 15px #4c20ee,
+        // 0 0 20px rgb(16, 49, 141);
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15pt;
         font-weight: 1000;
+        width: auto;
     }
     h3 {
         text-align: center;
@@ -47,17 +48,15 @@
         font-size: 12.5pt;
         font-style: italic;
         font-weight: bolder;
-        color: rgb(75, 10, 112);
+        color: rgb(106, 37, 161);
         text-decoration: solid;
-        text-shadow: 0 0 15px rgb(156, 0, 247);
     }
     h4 {
         text-align: right;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: normal;
-        font-size: 11pt;
+        font-size: 8pt;
         font-weight: 900;
-        text-shadow: 0 0 25px rgb(241, 139, 139);
     }
 }
 

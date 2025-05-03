@@ -1,43 +1,52 @@
 nav {
-    display: block; 
+    display: flow-root; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 
     ul {
       list-style: none;
       position: absolute;
       top: -11px;
-      left: 450px;
-      margin: 8px;
+      left: auto;
+      right: auto;
+      margin: 5px;
       gap: 1rem;
-      width: 900px;               // mesma largura do header
-      display: flex;
+      width: auto;               // mesma largura do header (estava 900px, deixei auto)
+      display: block;
       justify-content: center;    // centraliza os <li> dentro da <ul>
-      background-color: rgb(150, 91, 245); // cor de fundo para destacar
+      background-color: rgb(45, 41, 255); // cor de fundo para destacar
       box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.2);
       border-radius: 8px;         // se quiser arredondamento igual ao header
       z-index: 10;                // garante que fique acima de outros elementos se precisar
     }
     li {
         display: inline-block;
-        background-color: rgb(150, 91, 245);
+        // background-color: rgb(91, 93, 245);
         padding: 10px;
         margin: auto;
         transition: background-color 1s;
     }
     h1 {
-        text-align: left;      // alinha à esquerda
-        margin-left: 450px;    // espaçamento da borda esquerda (ajuste conforme o layout)
-        font-size: 2rem;     // opcional: tamanho da fonte
-        color: black;      // opcional: cor do texto
-        text-shadow: 
-        0 0 5px #cccccc,
-        0 0 10px #ff69b4,
-        0 0 15px #ff69b4,
-        0 0 20px #ff69b4;
+        display: flow-root;
+        // margin-top: auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: auto;      // alinha à esquerda / -m mudei pra auto
+        margin-left: auto;    // espaçamento da borda esquerda (ajuste conforme o layout) / -m mudei pra auto
+        font-size: 28pt;     // opcional: tamanho da fonte
+        color: rgb(12, 12, 12);      // opcional: cor do texto
+        // text-shadow: 
+        // 0 0 5px #cccccc,
+        // 0 0 10px rgb(231, 231, 231),
+        // 0 0 15px #8680d8,
+        // 0 0 20px #8799e9;
         
     }
     li:hover {
-        background-color: rgb(236, 161, 214);
+        background-color: rgb(211, 139, 207);
         text-decoration: underline;
+        transition: 1s;
+        border-radius: 8px;
+        font-weight: bold;
     }
     a {
         text-decoration: none;
@@ -46,8 +55,12 @@ nav {
     a:hover {
         text-decoration: underline;
         color: black;
-        transition: background-color 1s;
+        transition: 1s;
+        border-radius: 8px;
+        margin: 5px;
+        font-weight: bold;
     }
+
 
 // ***** CONFIGURAÇÃO RESPONSIVA ******
   // Telas grandes (ex: TVs)

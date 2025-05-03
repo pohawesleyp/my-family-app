@@ -10,14 +10,11 @@ export const MainContent: React.FC = () => {
             <article id="informacao-principal">
                 <header id="cabecalho-artigo">
                     <hgroup>
-                        <h2 className="evento-agenda">
-                        <a href="Link Eventos">Eventos</a> &nbsp;  &nbsp; <a href="Link Agenda">Agenda</a>
-                        </h2>
                         <h1>Sobre essa Grande Familia</h1>
                         <h3>(brigam por qualquer razão🎶)</h3>
                         <br/>
-                        <h4>Por Wesley Amaro</h4>
-                        <h4>Atualizado em 28/Abril/2025</h4>
+                        <h4><i>Por Wesley Amaro</i></h4>
+                        <h4><i>Atualizado em 02/Maio/2025</i></h4>
                     </hgroup>
                 </header>
 

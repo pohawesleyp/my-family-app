@@ -1,20 +1,18 @@
 header#cabecalho {
+    border-bottom: 2px rgb(156, 217, 245) solid;
+    height: 300px;
     background-color: #cccccc;
-    background-image: url('../../assets/_imagens/logo-header-luaFloral.jpg');
-    background-color: #cccccc;
-    background-image: url('../../assets/_imagens/logo-header-luaFloral.jpg');
+    background-image: url('../../assets/_imagens/logo-header-noiteEstrelada.jpg');
     background-size: cover;         // cobre toda a área do elemento
     background-position: center;    // centraliza a imagem
     background-repeat: no-repeat;    // evita repetição
-    border-bottom: 2px pink solid;
-    height: 300px;
     text-align: center;
-    width: 900px;
-    margin: 30px auto 30px auto;
-    box-shadow: 15px 5px 10px rgba(226, 168, 132, 0.541);
+    width: auto;
+    margin: -15px auto auto auto;
+    box-shadow: 10px 5px 5px rgba(145, 193, 233, 0.541);
 
    
-   .logo-principal {
+   h1.logo-principal {
     padding: 8px;
     font-family: Georgia, 'Times New Roman', Times, sans-serif;
     font-weight: 600px;
@@ -31,13 +29,6 @@ header#cabecalho {
       0 0 60px #f0f;
     animation: brilhoAnimado 2s ease-in-out infinite alternate;
   }
-
-  img#flutuante {
-    position: absolute;
-    // left: 950px;
-    // top: 150px;
-  }
-  
   @keyframes brilhoAnimado {
     from {
       text-shadow: 
@@ -56,16 +47,21 @@ header#cabecalho {
   }
 
    h2 {
-    color: black;
-    text-shadow: 2px 0px 10px white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(195, 56, 197);
+    text-shadow: 0px 1px 1px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: auto;
+    font-size: 15pt;
+    font-style: oblique;
+    font-weight: bolder;
    }
 
    #flutuante {
     position: absolute;
-    right: 300px;
+    left: 950px;
     top: 200px;
-   }
+    width: 200px;
+  }
 
 // ***** CONFIGURAÇÃO RESPONSIVA ******
       // 📱 Celulares
