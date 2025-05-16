@@ -9,7 +9,10 @@ import "./styles/global.css";
 const App: React.FC = () => {
   return (
     <>
-      <div id="interface">
+      <div
+        id="interface"
+        className="w-[max-content] bg-[rgb(158,223,243)] my-2.5 mx-auto p-2.5 shadow-lg"
+      >
         <Header />
         <Menu />
         <MainContent />

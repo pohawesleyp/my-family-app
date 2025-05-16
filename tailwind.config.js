@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}", // ESSENCIAL para funcionar em projetos React + Vite
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        akaya: ['"Akaya Kanadaka"', "cursive"],
+      },
+    },
   },
   plugins: [],
-}
-
+};
