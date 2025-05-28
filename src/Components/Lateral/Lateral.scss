@@ -1,56 +1,46 @@
 .lateral {
   display: block;
-  width: 400px;
+  width: 32rem;
   float: right;
   background-color: rgb(158, 223, 243);
-  padding: 15px;
+  padding: 1rem;
   margin-top: auto;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-  margin-right: 30px;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin-right: 1.8rem;
 }
-
-// .evento-agenda button {
-//   font-family: "Times New Roman", Times, serif;
-
-//   a {
-//     color: #1f1e1e;
-//     // background-color: blue;
-//     font-size: 15pt;
-//   }
-// }
-
-// .evento-agenda button:hover {
-//   transition: 1s;
-//   color: rgb(248, 241, 241);
-//   background-color: rgb(153, 10, 77);
-// }
 
 .perguntaOqL {
   color: white;
-  background-color: rgb(211, 139, 207);
+  background-color: #d8b4fe;
   text-align: center;
   font-style: italic;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .musicaLateral {
-  background-color: rgb(211, 139, 207);
+  background-color: #d8b4fe;
   font-style: italic;
   text-align: center;
   color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 #lateral-alem-vida p {
   text-align: left;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 1.8rem;
+  margin-top: 1.2rem;
   gap: 1rem;
 }
 
 .além-da-vida {
-  background-color: rgb(211, 139, 207);
+  background-color: #d8b4fe;
   font-style: italic;
   text-align: center;
   color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .luto {
@@ -63,32 +53,15 @@
 }
 
 .viva {
-  background-color: rgb(211, 139, 207);
+  background-color: #d8b4fe;
   font-style: italic;
   text-align: center;
   color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-// ***** CONFIGURAÇÃO RESPONSIVA ******
-@media (max-width: 768px) {
-  // .evento-agenda {
-  //   font-size: 1rem;
-  //   text-align: center;
-  // }
-
-  .perguntaOqL,
-  .além-da-vida {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  p {
-    font-size: 0.95rem;
-  }
-
-  .musicaLateral,
-  .viva {
-    text-align: center;
-    font-size: 1.1rem;
-  }
+.evento-agenda {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }

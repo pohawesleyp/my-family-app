@@ -1,9 +1,9 @@
-import React from "react";
 import "../Lateral/Lateral.scss";
 import { useNavigate } from "react-router-dom";
 import { CalendarDays } from "lucide-react";
+import Paragrafe from "../../Ui/Paragrafe";
 
-export const Lateral: React.FC = () => {
+function Lateral() {
   const navigate = useNavigate();
 
   const handleGoToAgenda = () => {
@@ -14,26 +14,25 @@ export const Lateral: React.FC = () => {
   };
   return (
     <aside className="lateral">
-      <h2 className="evento-agenda font-[Times_New_Roman]">
-        <button className="flex items-center gap-2 font-akaya text-[#1f1e1e] bg-[#f4f4f4] px-2 py-2 rounded-full shadow-md transition-colors duration-500 hover:text-[#f8f1f1] hover:bg-[#990a4d]">
+      <h2 className="evento-agenda font-[Times_New_Roman] text-[1.666rem] text-center pt-[0.9rem] my-0 mb-6 mx-auto max-w-screen-lg">
+        <button className="justify contents-center gap-2 font-akaya text-[#1f1e1e] bg-[#f4f4f4] px-2 py-2 rounded-full shadow-md transition-colors duration-500 hover:text-[#f8f1f1] hover:bg-[#990a4d]">
           Eventos
         </button>{" "}
         &nbsp; &nbsp;{" "}
         <button
           onClick={handleGoToAgenda}
-          className="flex items-center gap-2 font-akaya text-[#1f1e1e] bg-[#f4f4f4] px-2 py-2 rounded-full shadow-md transition-colors duration-500 hover:text-[#f8f1f1] hover:bg-[#990a4d]"
+          className="justify contents-center gap-2 font-akaya text-[#1f1e1e] bg-[#f4f4f4] px-2 py-2 rounded-full shadow-md transition-colors duration-500 hover:text-[#f8f1f1] hover:bg-[#990a4d]"
         >
-          {" "}
-          <CalendarDays className="w-5 h-5" />
+          <CalendarDays className="w-50 h-50" />
           Agenda
-        </button>
+        </button>{" "}
       </h2>
 
       <h1 className="perguntaOqL">
         Um dia me perguntaram: Afinal, o que é o{" "}
         <span style={{ color: "black" }}>luto?</span>
       </h1>
-      <p>
+      <Paragrafe>
         <i>
           Naquele momento eu só pude parar e refletir em uma maneira de explicar
           aquilo, em explicar o sentimento, que talvez, não tenha explicação. Se
@@ -43,10 +42,10 @@ export const Lateral: React.FC = () => {
           revive memórias e lembra da alegria, mesmo em meio a dor, pois afinal,
           o que mais seria o luto se não o amor que perdura?
         </i>
-      </p>
+      </Paragrafe>
 
       <h2 className="musicaLateral">Musica</h2>
-      <div className="video-youtube">
+      <div className="video-youtube mx-auto max-w-screen-lg px-4 py-8">
         <iframe
           width="400"
           height="315"
@@ -59,29 +58,33 @@ export const Lateral: React.FC = () => {
         ></iframe>
       </div>
 
-      <p>
+      <Paragrafe>
         E em seus olhos eram tanto brilho, que mais que seu filho, eu fiquei seu
         fã
-      </p>
+      </Paragrafe>
 
       <div id="lateral-alem-vida">
         <h1 className="além-da-vida">Além da Vida</h1>
-        <p>
-          12 anos e 9 meses sem você:{" "}
-          <span className="luto">Maria Belmira (bisavó/mãe)</span>
-        </p>
-        <p>
-          8 anos sem você: <span className="luto">Lucia Maria (tia/mãe)</span>
-        </p>
-        <p>
-          9 meses sem você: <span className="luto">José Nou (vô/pai)</span>
-        </p>
+        <Paragrafe>
+          <li>
+            12 anos e 9 meses sem você:{" "}
+            <span className="luto">Maria Belmira (bisavó/mãe)</span>
+          </li>
+          <li>
+            8 anos sem você: <span className="luto">Lucia Maria (tia/mãe)</span>
+          </li>
+          <li>
+            9 meses sem você: <span className="luto">José Nou (vô/pai)</span>
+          </li>
+        </Paragrafe>
       </div>
 
       <h2 className="viva">Viva!</h2>
-      <p>
+      <Paragrafe>
         Que possamos celebrar em vida e eternizar as memorias de quem amamos.
-      </p>
+      </Paragrafe>
     </aside>
   );
-};
+}
+
+export default Lateral;

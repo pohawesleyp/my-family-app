@@ -1,15 +1,18 @@
-import React from "react";
 import momentAvos from "../../assets/_imagens/avos-momento-amor.png";
 import festaWes28 from "../../assets/_imagens/festa-wes-28-anos.png";
 import "../MainContent/MainContent.scss";
+import Paragrafe from "../../Ui/Paragrafe";
+import HeadingH2 from "../../Ui/Heading-H2";
 
-export const MainContent: React.FC = () => {
+function MainContent() {
   return (
     <section id="corpo">
       <article id="informacao-principal">
         <header id="cabecalho-artigo">
           <hgroup>
-            <h1>Sobre essa Grande Familia</h1>
+            <h1 className="text-black bg-white rounded-[0.1rem] border-y-4 text-center font-akaya text-[15pt] font-[500]">
+              Sobre essa Grande Familia
+            </h1>
             <h3>(brigam por qualquer razão🎶)</h3>
             <br />
             <h4>
@@ -29,29 +32,30 @@ export const MainContent: React.FC = () => {
                 <i>Se o amor fosse uma foto</i>
               </b>
             </h2>
-            <p>
+            <Paragrafe>
               Ocasiões, onde percebemos que estamos sentindo falta de momentos
               que ainda estamos vivendo
-            </p>
+            </Paragrafe>
           </figcaption>
         </figure>
 
-        <h2 className="expressadoAmor">Como é expressado o Amor?</h2>
-        <p>
+        <HeadingH2>Como é expressado o Amor?</HeadingH2>
+        {/* fiz apenas pra pular linha o código tava muito grudado  */}
+        <Paragrafe>
           Nem todas as formas de deizer "eu te amo" são e/ou serão iguais, mas
           todas elas ainda serão um "eu te amo".
-        </p>
+        </Paragrafe>
 
-        <h2 className="perguntaFamiliaSangue">
-          Quem é considerado um familiar?
-        </h2>
-        <p>
+        <HeadingH2>Quem é considerado um familiar?</HeadingH2>
+        {/* fiz apenas pra pular linha o código tava muito grudado  */}
+        <Paragrafe>
           Consideramos familia todos a quem escolhemos, acolhemos e nos acolhem,
           com o coração e com a vida
-        </p>
+        </Paragrafe>
 
-        <h2 className="perguntaIdeiaSite">Como surgiu a ideia do site?</h2>
-        <p>
+        <HeadingH2>Como surgiu a ideia do site?</HeadingH2>
+        {/* fiz apenas pra pular linha o código tava muito grudado  */}
+        <Paragrafe>
           Um tempo atrás (bem quietinho) eu decidi que era hora de montar um
           projeto, particular e muito pessoal, mas um projeto, e passei a
           desenvolver um site familiar. É um algo muito especial para mim, pois
@@ -59,17 +63,18 @@ export const MainContent: React.FC = () => {
           memórias, além de possuir calendários (aniversários), agendas (festas)
           e por ai vai. São pequenas e grandes coisas, que queremos levar para
           sempre.
-        </p>
+        </Paragrafe>
 
-        <h2 className="perguntaIntuitoSite">Qual o intuito do site?</h2>
-        <p>
+        <HeadingH2>Qual o intuito do site?</HeadingH2>
+        {/* fiz apenas pra pular linha o código tava muito grudado  */}
+        <Paragrafe>
           O intuito do site, além de criar uma arvore familiar em tempo real, é
           que ele possa ser uma ancora memorial, alimentada de maneira remota,
           mensalmente, para além de eternizar os momentos, os sorrisos, os
           abraços, as lagrimas, as dores, as vindas, as partidas e os que
           ficaram, também possa nos enfatizar o fato de que se rodear de pessoas
           que amamos, nos lembra que estamos vivos.
-        </p>
+        </Paragrafe>
 
         <figure className="foto-legenda-2">
           <img src={festaWes28} alt="Festa Wes" width={600} />
@@ -81,7 +86,7 @@ export const MainContent: React.FC = () => {
                 </i>
               </b>
             </h2>
-            <p>Uma nova maneira de ver o mundo</p>
+            <Paragrafe>Uma nova maneira de ver o mundo</Paragrafe>
           </figcaption>
         </figure>
 
@@ -111,4 +116,6 @@ export const MainContent: React.FC = () => {
       </article>
     </section>
   );
-};
+}
+
+export default MainContent;
