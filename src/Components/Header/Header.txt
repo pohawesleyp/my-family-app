@@ -1,3 +1,5 @@
+ARQUIVO PARA SALVAR A CONFIGURAÇÃO SASS ANTES DAS MUDANÇAS QUE ESTOU FAZENDO EM TAILWIND (ALGUMAS JA MUDEI E N SALVEI)
+
 header#cabecalho {
   border-bottom: 0.2rem rgb(156, 217, 245) solid;
   height: 18.7rem;
@@ -41,5 +43,49 @@ header#cabecalho {
     font-size: 15pt;
     font-style: oblique;
     font-weight: bolder;
+  }
+
+  #flutuante {
+    position: absolute;
+    left: 950px;
+    top: 200px;
+    width: 200px;
+  }
+
+  // ***** CONFIGURAÇÃO RESPONSIVA ******
+  // 📱 Celulares
+  @media (max-width: 768px) {
+    h1.logo-principal {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    #flutuante {
+      width: 200px;
+    }
+  }
+
+  // 💻 Tablets
+  @media (max-width: 1024px) {
+    h1.logo-principal {
+      font-size: 2.2rem;
+    }
+    #flutuante {
+      width: 250px;
+    }
+  }
+
+  // 🖥️ Telas grandes (TVs, desktops)
+  @media (min-width: 1920px) {
+    h1.logo-principal {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    #flutuante {
+      width: 350px;
+    }
   }
 }

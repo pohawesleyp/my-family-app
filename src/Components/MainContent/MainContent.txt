@@ -1,5 +1,13 @@
+ARQUIVO PARA SALVAR A CONFIGURAÇÃO SASS ANTES DAS MUDANÇAS QUE ESTOU FAZENDO EM TAILWIND (ALGUMAS JA MUDEI E N SALVEI)
+
 #corpo {
-  // box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  width: 30.5rem;
+  float: inline-start;
+  border-right: 0.1rem solid rgb(68, 2, 13);
+  padding-right: 1.2rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
 }
 
 #cabecalho-artigo {
@@ -57,15 +65,15 @@ figcaption:hover {
 
 p {
   text-align: center;
-  text-transform: none;
+  text-transform: lowercase;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
   font-style: italic;
 }
 
 table {
-  margin-bottom: 2.18rem;
-  margin-top: 2.18rem;
+  margin-bottom: 35px;
+  margin-top: 35px;
 }
 
 table caption {
@@ -74,32 +82,32 @@ table caption {
   color: black;
   font-weight: bolder;
   vertical-align: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
   span {
     color: rgb(219, 49, 211);
-    font-size: 0.9rem;
+    font-size: 15px;
     float: right;
   }
 }
 
 table.tabelaFamiliar {
-  border: 0.1rem solid black;
-  border-spacing: 0.1rem;
+  border: 1px solid black;
+  border-spacing: 0px;
   margin-left: auto;
   margin-right: auto;
 
   td {
-    border: 0.1rem solid rgb(219, 49, 185);
-    padding: 0.4rem;
+    border: 1px solid rgb(219, 49, 185);
+    padding: 5px;
     text-align: center;
     vertical-align: middle;
   }
 
   .ce {
     color: black;
-    font-size: 0.9rem;
+    font-size: 15px;
     font-family: "Times New Roman", Times, serif;
     font-weight: bolder;
     vertical-align: middle;
@@ -107,8 +115,75 @@ table.tabelaFamiliar {
 
   .cd {
     color: black;
-    font-size: 1.2rem;
+    font-size: 18px;
     font-size: medium;
     vertical-align: middle;
+  }
+}
+
+// ***** CONFIGURAÇÃO RESPONSIVA ******
+// TVs (telas muito grandes)
+@media (min-width: 1920px) {
+  #corpo {
+    width: 900px;
+    padding-right: 200px;
+  }
+  #cabecalho-artigo h1 {
+    font-size: 25pt;
+  }
+}
+
+// Tablets
+@media (max-width: 1024px) {
+  #corpo {
+    width: 90%;
+    float: none;
+    padding-right: 30px;
+  }
+
+  .evento-agenda {
+    font-size: 16pt;
+    text-align: center;
+  }
+
+  #cabecalho-artigo {
+    h1 {
+      font-size: 14pt;
+    }
+    h3 {
+      font-size: 11pt;
+    }
+    h4 {
+      font-size: 10pt;
+      text-align: center;
+    }
+  }
+}
+
+// Celulares
+@media (max-width: 768px) {
+  #corpo {
+    width: 100%;
+    float: none;
+    padding: 0 15px;
+    border-right: none;
+  }
+
+  .evento-agenda {
+    font-size: 14pt;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #cabecalho-artigo {
+    h1 {
+      font-size: 13pt;
+    }
+    h3 {
+      font-size: 10pt;
+    }
+    h4 {
+      font-size: 9pt;
+    }
   }
 }

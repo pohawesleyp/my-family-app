@@ -1,3 +1,16 @@
+ARQUIVO PARA SALVAR A CONFIGURAÇÃO SASS ANTES DAS MUDANÇAS QUE ESTOU FAZENDO EM TAILWIND (ALGUMAS JA MUDEI E N SALVEI)
+
+.lateral {
+  display: block;
+  width: 32rem;
+  float: right;
+  background-color: rgb(158, 223, 243);
+  padding: 1rem;
+  margin-top: auto;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin-right: 1.8rem;
+}
+
 .perguntaOqL {
   color: white;
   background-color: #d8b4fe;

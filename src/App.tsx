@@ -10,12 +10,16 @@ function App() {
     <>
       <div
         id="interface"
-        className="w-[max-content] bg-[rgb(158,223,243)] my-2.5 mx-auto p-2.5 shadow-lg"
+        className="w-full max-w-screen-2xl mx-auto p-2.5 shadow-lg bg-[rgb(158,223,243)] my-2.5"
       >
         <Header />
         <Menu />
-        <MainContent />
-        <Lateral />
+        <div className="flex justify-center w-full shadow-md max-w-screen-2xl mx-auto">
+          {" "}
+          <MainContent />
+          <Lateral />
+        </div>{" "}
+        {/* Fim da nova div */}
         <Footer />
       </div>
     </>
