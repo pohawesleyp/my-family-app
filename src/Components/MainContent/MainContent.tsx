@@ -8,40 +8,30 @@ function MainContent() {
   return (
     <section
       id="corpo"
-      className="flex-2 pr-4 md:pr-6 lg:pr-8 py-4 sm:py-6 lg:py-8 border-r border-[rgb(68,2,13)]"
+      className="flex-2 pr-4 md:pr-6 lg:pr-8 py-4 sm:py-6 lg:py-8 border-r border-[rgb(255,255,255)] w-full max-w-screen-xl mx-auto max-h-full min-w-min"
     >
-      <div className="w-full max-w-screen-lg mx-auto">
+      <div className="w-full max-w-screen-xl mx-auto max-h-full min-w-min">
         <article id="informacao-principal">
           <header id="cabecalho-artigo">
             <hgroup>
-              <h1 className="text-black bg-white rounded-[0.5rem] border-y-4 text-center font-akaya text-[1.8rem] font-[900]">
-                Sobre essa Grande Familia
+              <h1 className="text-blue-900 bg-white rounded-[0.5rem] border-y-4 text-center font-akaya text-[1.8rem] font-[900]">
+                Sobre essa Grande Familia 🦋
               </h1>
               <h3>(brigam por qualquer razão🎶)</h3>
               <br />
-              <h4>
-                <i>Por Wesley Amaro</i>
-              </h4>
-              <h4>
-                <i>Atualizado em 01/Junho/2025</i>
-              </h4>
+              <iframe
+                width="560"
+                height="330"
+                src="https://www.youtube.com/embed/xs0XzbC4zUI?si=CA8B4HSqymlLj-UN"
+                title="A Grande Familia"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+                className="mx-auto block border-r"
+              ></iframe>
             </hgroup>
           </header>
-
-          <figure className="foto-legenda-1">
-            <img src={momentAvos} alt="Imagem Avós" />
-            <figcaption>
-              <h2 className="texto-azul-1" style={{ color: "dodgerblue" }}>
-                <b>
-                  <i>Se o amor fosse uma foto</i>
-                </b>
-              </h2>
-              <Paragrafe>
-                Ocasiões, onde percebemos que estamos sentindo falta de momentos
-                que ainda estamos vivendo
-              </Paragrafe>
-            </figcaption>
-          </figure>
 
           <HeadingH2>Como surgiu a ideia do site?</HeadingH2>
           {/* fiz apenas pra pular linha o código tava muito grudado  */}
@@ -54,6 +44,24 @@ function MainContent() {
             agendas (festas) e por ai vai. São pequenas e grandes coisas, que
             queremos levar para sempre.
           </Paragrafe>
+
+          <figure className="foto-legenda-1 rounded-2xl">
+            <img src={momentAvos} alt="Imagem Avós" className="rounded-2xl" />
+            <figcaption>
+              <h2
+                className="texto-azul-1 text-3xl"
+                style={{ color: "dodgerblue" }}
+              >
+                <b>
+                  <i>Se o amor fosse uma foto</i>
+                </b>
+              </h2>
+              <Paragrafe>
+                Ocasiões, onde percebemos que estamos sentindo falta de momentos
+                que ainda estamos vivendo
+              </Paragrafe>
+            </figcaption>
+          </figure>
 
           <HeadingH2>Qual o intuito do site?</HeadingH2>
           {/* fiz apenas pra pular linha o código tava muito grudado  */}
@@ -83,10 +91,13 @@ function MainContent() {
             eu sei que você entendeu.
           </Paragrafe>
 
-          <figure className="foto-legenda-2">
-            <img src={festaWes28} alt="Festa Wes" />
+          <figure className="foto-legenda-2 rounded-2xl">
+            <img src={festaWes28} alt="Festa Wes" className="rounded-2xl" />
             <figcaption>
-              <h2 className="texto-azul-2" style={{ color: "dodgerblue" }}>
+              <h2
+                className="texto-azul-2 text-3xl"
+                style={{ color: "dodgerblue" }}
+              >
                 <b>
                   <i>
                     Me cercar de pessoas que amo, me faz lembrar que estou vivo!
@@ -103,23 +114,21 @@ function MainContent() {
             </caption>
             <tr>
               <td className="ce">Familia Santos</td>
-              <td className="cd">Legado de Maria Belmira</td>
+              <td className="cd">Maria Belmira</td>
             </tr>
             <tr>
               <td className="ce">Familia Amaro</td>
-              <td className="cd">Legado de Maria Amaro</td>
+              <td className="cd">Maria Amaro</td>
             </tr>
             <tr>
               <td className="ce">Familia do Coração</td>
-              <td className="cd">Legado que Escolhemos</td>
+              <td className="cd">A que Escolhemos</td>
             </tr>
             <tr>
               <td className="ce">Pet's</td>
               <td className="cd">Animais também são familia!</td>
             </tr>
           </table>
-
-          {/* Aqui entra um possível video */}
         </article>
       </div>
     </section>

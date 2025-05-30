@@ -89,6 +89,8 @@ function Lateral() {
         <Paragrafe>
           Que possamos celebrar em vida e eternizar as memorias de quem amamos.
         </Paragrafe>
+
+        {/* Aqui entra um possível video */}
       </aside>
     </div>
   );

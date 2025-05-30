@@ -1,0 +1,27 @@
+ARQUIVO PARA SALVAR A CONFIGURAÇÃO SASS ANTES DAS MUDANÇAS QUE ESTOU FAZENDO EM TAILWIND (ALGUMAS JA MUDEI E N SALVEI - MAS ESSE AQUI EU NÃO MEXI EM NADA NO SCSS)
+
+.rodape {
+    clear: both;
+    border-top: 1px solid black;
+    text-align: center;
+
+a {
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(211, 139, 207);
+    transition: 1s;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+p {
+    font-size: bold;
+    color: black;
+    text-transform: capitalize;
+}
+}

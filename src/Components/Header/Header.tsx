@@ -5,7 +5,14 @@ function Header() {
   return (
     <>
       <div className="relative w-full">
-        <header id="cabecalho">
+        <header
+          id="cabecalho"
+          className="w-full p-4
+      sm:p-6
+      md:w-3/4 md:mx-auto md:p-8
+      lg:w-2/3 lg:p-10
+      xl:w-1/2 xl:p-12"
+        >
           <hgroup>
             <h1 className="logo-principal">Tudo Sobre Amor</h1>
             <h2>

@@ -3,7 +3,7 @@ import Paragrafe from "../../Ui/Paragrafe";
 
 function Footer() {
   return (
-    <footer className="rodape">
+    <footer className="rodape w-full min-w-full max-w-full md:mx-auto">
       <Paragrafe>
         Copyright 2025 - by Wesley Amaro <br />
         <a
