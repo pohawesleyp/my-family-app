@@ -1,7 +1,5 @@
-import App from "../App";
-
-export function AlemdaVida () {
-    return (
-        <App/>
-    )
+function AlemdaVida() {
+  return <h1>Além da vida</h1>;
 }
+
+export default AlemdaVida;

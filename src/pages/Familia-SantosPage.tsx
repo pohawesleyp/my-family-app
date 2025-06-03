@@ -1,7 +1,5 @@
-import App from "../App";
-
-export function FamiliaSantos () {
-    return (
-        <App/>
-    )
+function FamiliaSantos() {
+  return <h1>Familia Santos</h1>;
 }
+
+export default FamiliaSantos;

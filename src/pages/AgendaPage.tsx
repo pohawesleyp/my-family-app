@@ -1,7 +1,7 @@
 import { ChevronLastIcon } from "lucide-react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-export default function AgendaPage() {
+function AgendaPage() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const title = searchParams.get("title") || "Sem título";
@@ -20,3 +20,5 @@ export default function AgendaPage() {
     </div>
   );
 }
+
+export default AgendaPage;

@@ -1,17 +1,13 @@
-import { StrictMode } from "react";
-// import { createRoot } from "react-dom/client";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AgendaPage from "./pages/AgendaPage.tsx";
+import { BrowserRouter } from "react-router-dom";
+import "./styles/global.scss";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <StrictMode>
+  <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/agenda" element={<AgendaPage />} />
-      </Routes>
+      <App />
     </BrowserRouter>
-  </StrictMode>
+  </React.StrictMode>
 );

@@ -1,7 +1,5 @@
-import App from "../App";
-
-export function FamiliaAmaro () {
-    return (
-        <App/>
-    )
+function FamiliaAmaro() {
+  return <h1>Familia Amaro</h1>;
 }
+
+export default FamiliaAmaro;

@@ -1,4 +1,5 @@
 import "../Menu/Menu.scss";
+import { Link } from "react-router-dom";
 
 function Menu() {
   return (
@@ -6,28 +7,28 @@ function Menu() {
       <nav id="menu" className="fixed top-0 left-0 right-0 z-50">
         <ul className="flex justify-between p-0 list-none w-full max-w-screen-xl mx-auto max-h-full min-w-min">
           <li>
-            <a href="home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="multimidia">Multimidia</a>
+            <Link to="/multimidia">Multimidia</Link>
           </li>
           <li>
-            <a href="familia-santos">Familia Santos</a>
+            <Link to="/familiasantos">Familia Santos</Link>
           </li>
           <li>
-            <a href="familia-amaro">Familia Amaro</a>
+            <Link to="/familiaamaro">Familia Amaro</Link>
           </li>
           <li>
-            <a href="familia-coracao">Familia do Coração</a>
+            <Link to="/familiacoracao">Familia do Coração</Link>
           </li>
           <li>
-            <a href="aniversarios">Aniversários</a>
+            <Link to="/agenda">Agenda</Link>
           </li>
           <li>
-            <a href="alem-da-vida">Além da Vida</a>
+            <Link to="/alemdavida">Além da Vida</Link>
           </li>
           <li>
-            <a href="fale-conosco">Fale Conosco</a>
+            <Link to="/faleconosco">Fale Conosco</Link>
           </li>
         </ul>
       </nav>
