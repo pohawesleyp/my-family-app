@@ -1,0 +1,15 @@
+.imagensMulti {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  align-content: space-around;
+}
+.imagensMulti img {
+  width: 25rem;
+  height: auto;
+  border-radius: 10rem 10rem 10rem 10rem;
+}
