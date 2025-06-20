@@ -36,13 +36,18 @@ function MainContent() {
           <HeadingH2>Como surgiu a ideia do site?</HeadingH2>
           {/* fiz apenas pra pular linha o código tava muito grudado  */}
           <Paragrafe>
-            Um tempo atrás (bem quietinho) eu decidi que era hora de montar um
-            projeto, particular e muito pessoal, mas um projeto, e passei a
-            desenvolver um site familiar. É um algo muito especial para mim,
-            pois se trata de um espaço familiar, onde o foco é guardar e
-            registrar memórias, além de possuir calendários (aniversários),
-            agendas (festas) e por ai vai. São pequenas e grandes coisas, que
-            queremos levar para sempre.
+            Há um tempo, de forma bem discreta, decidi que era hora de iniciar
+            um projeto. Um projeto particular, muito pessoal, mas ainda assim,
+            um projeto. Desde então, comecei a desenvolver um site familiar com
+            o propósito de guardar, registrar e eternizar memórias, momentos e
+            pessoas queridas. Esse projeto é extremamente especial para mim,
+            pois representa um espaço dedicado à família e amigos. Nele, o foco
+            é preservar lembranças afetivas, além de incluir funcionalidades
+            como calendários de aniversários, agendas de festas e muito mais.
+            Com o passar dos anos, entre idas e vindas, percebi o quanto é
+            importante eternizar não apenas dentro de mim, mas também em um
+            lugar real, tudo aquilo que quero levar para sempre comigo: pessoas,
+            histórias, momentos.
           </Paragrafe>
 
           <figure className="foto-legenda-1 rounded-2xl">
